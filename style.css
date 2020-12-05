@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	background-image: url("https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1988&q=80");
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 3.2rem;
+	font-weight: normal;
+}
+
+.app-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: auto;
+	margin-top: 4vh;
+}
+
+.countdown-container {
+	display: flex;
+}
+
+.big-text {
+	font-size: 3rem;
+	line-height: 1;
+	margin: 0 2rem;
+	font-weight: bold;
+}
+
+.countdown-el {
+	text-align: center;
+}
+
+.countdown-el span {
+	font-size: 1.5rem;
+}
