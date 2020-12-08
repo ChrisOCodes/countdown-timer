@@ -48,3 +48,75 @@ h1 {
 .countdown-el span {
 	font-size: 1.5rem;
 }
+
+.date-select {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+#select-month,
+#select-day,
+#select-year {
+	position: relative;
+	display: flex;
+	width: 6rem;
+	height: 3em;
+	line-height: 3;
+	background: #2c3e50;
+	overflow: hidden;
+	border-radius: 0.25em;
+}
+
+#select-month:hover,
+#select-day:hover,
+#select-year:hover {
+	color: lightblue;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: #2c3e50;
+	background-image: none;
+	flex: 1;
+	padding: 0 0.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.select:nth-type-of(1) {
+	margin-right: 15px;
+}
+
+.select {
+	margin: 0 15px;
+}
+
+.select:nth-last-of-type() {
+	margin-right: 15px;
+}
+
+select::after {
+	content: "\25BC";
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: #34495e;
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: 0.25s all ease;
+	-o-transition: 0.25s all ease;
+	transition: 0.25s all ease;
+}
